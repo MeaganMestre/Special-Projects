@@ -32,6 +32,16 @@ class Fruit1
 			end
 		end
 	end
+	
+	def salad?(dressing)
+		if dressing == "ranch"
+			@dressing = "ranch"
+		elsif dressing == "1000 island"
+			@dressing = "gross"
+		else
+			@dressing = nil
+	        end
+        end
 end
 
 
@@ -43,17 +53,3 @@ class Apple1 < Fruit1
 		super
 	end
 end
-
-
-
-
-
-
-def salad?(dressing)
-		if dressing == "ranch"
-			@dressing = "ranch"
-		elsif dressing == "1000 island"
-			@dressing = "gross"
-		else
-			@dressing = nil
-	end
